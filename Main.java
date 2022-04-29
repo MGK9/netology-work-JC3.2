@@ -15,14 +15,11 @@ public class Main {
         GameProgress game2 = new GameProgress(90, 4, 5, 4.4);
         GameProgress game3 = new GameProgress(60, 8, 14, 7.5);
 
-        saveGame(PATH + "/Quicksave.dat", game1);
-        saveGame(PATH + "/Greatestsave1.dat", game1);
-        saveGame(PATH + "/Quicksave.dat", game2);
-        saveGame(PATH + "/Greatestsave2.dat", game2);
-        saveGame(PATH + "/Quicksave.dat", game3);
-        saveGame(PATH + "/Greatestsave3.dat", game3);
+        saveGame(PATH + "/Save1.dat", game1);
+        saveGame(PATH + "/Save2.dat", game2);
+        saveGame(PATH + "/Save3.dat", game3);
 
-        zipFiles(PATH + "/savegames.zip", Arrays.asList(PATH + "/saveGame1.1.dat", PATH + "/saveGame2.1.dat", PATH + "/saveGame3.1.dat"));
+        zipFiles(PATH + "/savegames.zip", Arrays.asList(PATH + "/Save1.dat", PATH + "/Save2.dat", PATH + "/Save3.dat"));
 
         removeNonZip(PATH);
     }
